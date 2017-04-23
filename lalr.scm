@@ -127,7 +127,7 @@
   (define (note-source-location lvalue tok) lvalue))
 
  ;; -- Chez Scheme
- (chez
+ (chezscheme
   (define-syntax define-macro
     (lambda (x)
       (syntax-case x ()
@@ -152,7 +152,7 @@
 
 
 (cond-expand
- (chez
+ (chezscheme
   (define-record lexical-token (category source value))
   (define-record source-location (input line column offset length)))
 
